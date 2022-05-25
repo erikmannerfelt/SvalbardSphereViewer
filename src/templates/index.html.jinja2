@@ -1,0 +1,17 @@
+{% extends "base.html.jinja2" %}
+
+{% block extrahead %}
+
+        <link rel="stylesheet" href="/static/plugins/leaflet/leaflet.css">
+
+        <script src="/static/plugins/leaflet/leaflet.js"></script>
+        <script src="/static/src/index.js"></script>
+{% endblock extrahead %}
+
+{% block content %}
+
+        <!--<p>A blatant rip-off of <a href="https://toposvalbard.npolar.no">TopoSvalbard</a>, with more glaciology-related layers!</p>-->
+        <div id="map" style="height: 100vh; width: 99vw; top: 0px; left: 0px; border: 0; padding: 0; margin: -8px;"></div>
+        <script>setup_map();</script>
+
+{% endblock content %}

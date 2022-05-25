@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8" />
+                <!--<link href="/static/tailwind.css" rel="stylesheet">-->
+                <title>Svalbard Sphere Viewer</title>
+                <meta name="description" content="360 spherical images from Svalbard.">
+                <meta name="keywords" content="Svalbard, UNIS, UiO, Glacier, 360, images, map, massbalance, glaciology, data, glacier, arctic">
+                <meta name="author" content="Svalbard Phere Viewer contributors">
+
+                {% block extrahead %}{% endblock extrahead %}
+                {% if not noscale %}
+                        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+                {% endif %}
+        </head>
+        <body>
+
+		{% block content %}{% endblock content %}
+
+
+		<!--
+                <footer>
+                        <p>Creator: Erik Schytt Mannerfelt</p>
+                </footer>
+		-->
+        </body>
+</html>

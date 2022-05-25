@@ -1,0 +1,25 @@
+{% extends "base.html.jinja2" %}
+
+{% block extrahead %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/static/plugins/photo-sphere-viewer/dist/photo-sphere-viewer.css"/>
+
+{% endblock extrahead %}
+
+{% block content %}
+
+        <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+        <script src="/static/plugins/photo-sphere-viewer/dist/photo-sphere-viewer.js"></script>
+        <script src="/static/src/sphere.js"></script>
+
+        <!--<p>{{filename}}</p>-->
+
+        <div id="viewer" style="width: 98vw; height: 98vh;"></div>
+
+        <script>
+                show_sphere("{{filename}}");
+        </script>
+
+{% endblock content %}
