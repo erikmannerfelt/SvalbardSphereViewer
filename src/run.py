@@ -2,6 +2,7 @@ import os
 
 import flask
 from flask import Flask, send_from_directory
+import compile_spheres
 
 
 def main() -> Flask:
@@ -25,4 +26,5 @@ def main() -> Flask:
 
 
 if __name__ == "__main__":
+    compile_spheres.main()
     main().run(host="0.0.0.0", port=80)
