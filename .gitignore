@@ -1,1 +1,7 @@
 spheres/*.jpg
+src/__pycache__/
+src/static/spheres/
+src/static/sphere-thumbnails/
+src/static/tiles/
+src/static/plugins/
+src/static/shapes/
